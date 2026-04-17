@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Alpaca Generator</title>
 </head>
+
 <body>
+    <section class="generator">
+        <div class="preview-col">
+            <div class="alpaca-stage" id="alpacaStage"></div>
+
+            <div class="actions">
+                <button id="randomBtn" class="btn btn-secondary" type="button">
+                    <span class="icon">🎲</span> Random
+                </button>
+                <button id="downloadBtn" class="btn btn-primary" type="button">
+                    <span class="icon">⬇</span> Download
+                </button>
+            </div>
+        </div>
+
+        <div class="panel-col">
+            <div class="panel-section">
+                <h3 class="panel-title">Accessorize the alpaca</h3>
+                <div class="chip-row" id="categoryRow"></div>
+            </div>
+            <div class="panel-section">
+                <h3 class="panel-title">Style</h3>
+                <div class="chip-row" id="variantRow"></div>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
+
 </html>
